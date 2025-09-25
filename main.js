@@ -5,6 +5,7 @@ const outputDiv = document.getElementById("output");
     // Get the varibles of inputs
     const firstNameInput = document.getElementById("firstName");
     const lastNameInput = document.getElementById("lastName");
+    const checkBoxInput = document.getElementById("myCheck");
 
 // Event Listener
 mainForm.addEventListener('submit', function (event) {
