@@ -34,6 +34,12 @@ transform: scale(1.1);
 
 }
 
+.check_box_field {
+    display:flex;
+    flex-direction: row;
+
+}
+
 .main_form_input {
 border: solid 5px;
 padding: 20px 15px;
