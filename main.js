@@ -8,13 +8,19 @@ const outputDiv = document.getElementById("output");
     const emailInput = document.getElementById("email");
     const dateInput = document.getElementById("date");
     const passwordInput = document.getElementById("password");
-    const checkBoxInput = document.getElementById("check");
+    const checkBoxInput = document.getElementById("checkbox");
 
 // Event Listener
 mainForm.addEventListener('submit', function (event) {
 
     // Prevent the action from the form to refresh the page
     event.preventDefault();
+
+    // Prevent E-mail text overflow
+    document.getElementById("email") .style.textOverflow = "ellipsis"
+     
+    
+
     
 
 
@@ -31,6 +37,8 @@ mainForm.addEventListener('submit', function (event) {
     <p>My Date of Birth is: ${dateInput.value}</p>
     <p>My Password is: ${passwordInput.value}</p>`
 
+
+
     outputDiv.style.display = 'block';
 
 
@@ -41,6 +49,11 @@ mainForm.addEventListener('submit', function (event) {
     emailInput.value ='';
     dateInput.value ='';
     passwordInput.value ='';
+    checkbox.value = false;
+
+    // Clear checkbox
+   
+    
 
 
 
