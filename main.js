@@ -5,7 +5,10 @@ const outputDiv = document.getElementById("output");
     // Get the varibles of inputs
     const firstNameInput = document.getElementById("firstName");
     const lastNameInput = document.getElementById("lastName");
-    const checkBoxInput = document.getElementById("myCheck");
+    const emailInput = document.getElementById("email");
+    const dateInput = document.getElementById("date");
+    const passwordInput = document.getElementById("password");
+    const checkBoxInput = document.getElementById("check");
 
 // Event Listener
 mainForm.addEventListener('submit', function (event) {
@@ -18,11 +21,28 @@ mainForm.addEventListener('submit', function (event) {
 
     console.log(`First Name: ${firstNameInput.value}`);
     console.log(`Last Name: ${lastNameInput.value}`);
+    console.log(`date: ${dateInput.value}`);
 
     // Get the output
     outputDiv.innerHTML =
-    `<p>My first name is: ${firstNameInput.value}</p>
-    <p>My last name is: ${lastNameInput.value}</p>`
+    `<p>My First name is: ${firstNameInput.value}</p>
+    <p>My Last name is: ${lastNameInput.value}</p>
+    <p>My E-mail is: ${emailInput.value}</p>
+    <p>My Date of Birth is: ${dateInput.value}</p>
+    <p>My Password is: ${passwordInput.value}</p>`
+
+    outputDiv.style.display = 'block';
+
+
+    // Clear the inputs
+
+    firstNameInput.value = '';
+    lastNameInput.value ='';
+    emailInput.value ='';
+    dateInput.value ='';
+    passwordInput.value ='';
+
+
 
 
 
