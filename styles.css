@@ -35,8 +35,11 @@ transform: scale(1.1);
 }
 
 .check_box_field {
-    display:flex;
+    display: flex;
     flex-direction: row;
+    gap: 10px;
+    
+    
 
 }
 

@@ -49,9 +49,9 @@ mainForm.addEventListener('submit', function (event) {
     emailInput.value ='';
     dateInput.value ='';
     passwordInput.value ='';
-    checkBoxInput.check = false;
 
-    // Clear checkbox
+
+
    
     
 
